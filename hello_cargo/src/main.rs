@@ -1,22 +1,19 @@
 fn main() {
 
-    let n = 10_000;
-    let mut count = 0;
-    let mut index = 0;
-    let mut n_prim = 0;
-    let mut is_prim = false;
+    let n: u32 = 10_000;
+    let mut count: u32 = 0;
+    let mut index: u32 = 0;
+    let mut n_prim: u32;
+    let mut is_prim: bool;
 
     loop {
         (n_prim, is_prim) = is_prime(count);
         if is_prim {
-            println!("{count} é primo");
             if index == n {
                 break;
             } else {
                 index += 1;
             }
-        } else {
-            println!("{count} não é primo");
         }
         count += 1;
     }
@@ -32,7 +29,6 @@ pub fn is_prime(x: u32) -> (u32, bool) {
 
     for i in 2..=(x / 2) {
         if x % i == 0 {
-            // println!("{x} é divisivel por {i}");
             return (0, false);
         }
     }
