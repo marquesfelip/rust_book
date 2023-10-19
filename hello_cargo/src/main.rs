@@ -1,24 +1,14 @@
 fn main() {
 
-    let n: u32 = 10_000;
-    let mut count: u32 = 0;
-    let mut index: u32 = 0;
-    let mut n_prim: u32;
-    let mut is_prim: bool;
+    let mut s = String::from("Hello");
 
-    loop {
-        (n_prim, is_prim) = is_prime(count);
-        if is_prim {
-            if index == n {
-                break;
-            } else {
-                index += 1;
-            }
-        }
-        count += 1;
-    }
+    change(s);
 
-    println!("{}", n_prim);
+    println!("{s}");
+}
+
+pub fn change(mut some_string: String) {
+    some_string.push_str(" , World!");
 }
 
 pub fn is_prime(x: u32) -> (u32, bool) {
