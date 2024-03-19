@@ -1,5 +1,18 @@
 {
     "rust-analyzer.linkedProjects": [
-        "./restaurant/Cargo.toml"
+        "./backyard/Cargo.toml",
+        "./restaurant/Cargo.toml",
+        "./celsius_fahrenheit/Cargo.toml",
+        "./control_flow/Cargo.toml",
+        "./enums/Cargo.toml",
+        "./fibonacci/Cargo.toml",
+        "./functions/Cargo.toml",
+        "./guessing_game/Cargo.toml",
+        "./hello_cargo/Cargo.toml",
+        "./no_type_annotations/Cargo.toml",
+        "./restaurant/Cargo.toml",
+        "./structs/Cargo.toml",
+        "./variables/Cargo.toml",
+        "./vectors/Cargo.toml",
     ]
 }
