@@ -14,5 +14,6 @@
         "./structs/Cargo.toml",
         "./variables/Cargo.toml",
         "./vectors/Cargo.toml",
+        "./storing_strings/Cargo.toml",
     ]
 }
